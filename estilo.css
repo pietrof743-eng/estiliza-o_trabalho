@@ -1,0 +1,23 @@
+.estilo1{
+    padding: 0px;
+    margin: 0%;
+    margin-top: 0px;
+    font-family: sans-serif ;
+    h1{
+        font-size: 45px;
+    }
+}
+
+.slogan{
+    padding: 10px;
+    margin: 0%;
+    margin-top: 0px;
+    background-color: red;
+    text-align: center;
+    h1{
+       font-size: 45px;
+       color: aliceblue;
+       outline-color: black;
+       outline: 5px;
+    }
+}
