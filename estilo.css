@@ -1,23 +1,235 @@
-.estilo1{
-    padding: 0px;
-    margin: 0%;
-    margin-top: 0px;
-    font-family: sans-serif ;
-    h1{
-        font-size: 45px;
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#cabecalho {
+    background-color: #1a237e;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 4px solid #ff9800;
+
+    h1 {
+        font-size: 36px;
+        font-weight: bold;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 18px;
+        margin: 5px 0 0 0;
+        font-style: italic;
     }
 }
 
-.slogan{
-    padding: 10px;
-    margin: 0%;
-    margin-top: 0px;
-    background-color: red;
+#menu {
+    background-color: #283593;
     text-align: center;
-    h1{
-       font-size: 45px;
-       color: aliceblue;
-       outline-color: black;
-       outline: 5px;
+    padding: 12px 0;
+    outline: 2px solid #ff9800;
+    outline-offset: -2px;
+
+    a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 25px;
+        margin: 0 5px;
+        font-weight: bold;
+        font-size: 16px;
+        display: inline-block;
+
+        &:hover {
+            background-color: #ff9800;
+            color: #1a237e;
+        }
     }
+}
+
+.conteudo {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.secao {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+
+    h2 {
+        font-size: 24px;
+        color: #1a237e;
+        margin-top: 0;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        border-bottom: 2px solid #ff9800;
+        padding-bottom: 8px;
+    }
+
+    h3 {
+        font-size: 18px;
+        color: #283593;
+        margin-top: 20px;
+        margin-bottom: 8px;
+    }
+
+    p {
+        line-height: 1.6;
+        text-align: justify;
+        margin-bottom: 12px;
+    }
+}
+
+.caixa_de_produtos {
+    background: #0d1b4a;
+    padding: 15px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    img {
+        width: auto;
+
+        height: 150px;
+        max-width: 100%;
+        border: 2px solid #ff9800;
+        border-radius: 5px;
+        flex-shrink: 0;
+    }
+}
+
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 15px;
+
+    th {
+        background-color: #1a237e;
+        color: white;
+        padding: 12px;
+        text-align: left;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: 1px solid #0d1b4a;
+    }
+
+    td {
+        padding: 10px 12px;
+        border: 1px solid #ccc;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f5f5f5;
+    }
+
+    tr:hover {
+        background-color: #e8eaf6;
+    }
+}
+
+.formulario {
+    max-width: 500px;
+    margin-top: 15px;
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #1a237e;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 18px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 15px;
+        font-family: Arial, sans-serif;
+
+        &:focus {
+            border-color: #ff9800;
+            outline: none;
+        }
+    }
+
+    textarea {
+        height: 120px;
+    }
+}
+
+.botao {
+    background-color: #ff9800;
+    color: white;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+
+    &:hover {
+        background-color: #e65100;
+    }
+}
+
+#rodape {
+    background-color: #1a237e;
+    color: #ccc;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 30px;
+    border-top: 4px solid #ff9800;
+
+    p {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+}
+
+.card-img {
+    width: 150px;
+    aspect-ratio: 1;
+    background-image: url('MacBook.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    padding: 10px;
+    border: 2px solid #ff9800;
+    border-radius: 5px;
+}
+
+.card-preco {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 4px 8px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.card-nome {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 3px 8px;
+    font-size: 13px;
+    margin-top: 5px;
+    border-radius: 4px;
 }
